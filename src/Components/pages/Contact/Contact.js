@@ -1,12 +1,8 @@
-import React from 'react'
+import React from 'react';
+import "../Contact/Contact.css";
 const Contact = () => {
   return (
-    <div className="container">
-    
-      <h1 className="text-center" style={{paddingTop: "30%"}}>
-        Contact Us
-      </h1>
-      
+    <div className=" contact d-flex flex-wrap justify-content-evenly justify-content-center my-5 py-5">          
     </div>
   )
 }
