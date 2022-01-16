@@ -1,11 +1,9 @@
 import React from 'react'
+import Page_title from "../../page_title"
 const About = () => {
   return (
     <div className="container">
-    
-      <h1 className="text-center" style={{paddingTop: "30%"}}>
-        About
-      </h1>
+      <Page_title title="About Us" description="Who We Are ?" />
       
     </div>
   )

@@ -1,3 +1,47 @@
+/* --------------------------------------------- puplic -------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: box-sizing;
+}
+.page_title {
+    width: 100%;
+    height: 12rem;
+    background-image: url(../About/t.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0; 
+    z-index: 1;
+}
+
+.page_title::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;  
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+.page_title_info {
+    text-align: center;
+    color: azure;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 1px;
+}
+.page_title_info h2 {
+    font-size: 50px 
+}
+.page_title_info p {
+    color: rgba(240, 255, 255, 0.541);
+}
+/* --------------------------------------------------------------------------------------------- */
 .carousel-item.zero-slide {
     background-image: url("environment_one.jpg");
     background-size: cover;
@@ -182,7 +226,7 @@ button.cus-befor:hover::before {
     z-index: -1;
 }
 .icons div svg:hover {
-    color: #68ea30;
+    color: #6fd33d;
 }
 .icons div svg {
     color: azure;
