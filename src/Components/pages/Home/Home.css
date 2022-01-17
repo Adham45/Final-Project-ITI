@@ -362,6 +362,8 @@ button.cus-befor:hover::before {
 #about .about_info h2 {
     margin-bottom: 1.5rem;
     text-transform: capitalize;
+    color: #68ea30;
+    font-weight: bold;
 }
 #about img {
     width: 30rem  ;
@@ -435,7 +437,6 @@ button.cus-befor:hover::before {
 }
 #about .circle_icons div:nth-child(4) span {
     cursor: pointer; 
-
 }
 
 #about .circle_icons div:nth-child(5) {
@@ -447,25 +448,34 @@ button.cus-befor:hover::before {
     bottom: -1rem;
     left: -21rem;
     box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-
+    
 }
 
 #about .circle_icons div:nth-child(6) {
     position: absolute;
     right: 3rem;
     bottom: 8rem;
-
+    
 }
 #about .circle_icons div:nth-child(6) .ico  {
     right: -21rem;
     bottom: 0rem;
     box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-
+    
 }
 #about .circle_icons div:nth-child(7) .ico  {
     bottom: -9.5rem;
     left: 9.5rem;
     box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-
+    
 }
 
+#about .circle_icons div:nth-child(4) span svg {
+    /* color: red; */
+}
+
+@keyframes flower {
+    0% {
+        font-size: 30;
+    }
+}

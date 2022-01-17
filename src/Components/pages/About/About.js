@@ -5,7 +5,6 @@ import { GiFeather ,  GiSpotedFlower} from 'react-icons/gi'
 import { HiOutlineLightBulb ,HiOutlineSun } from 'react-icons/hi'
 import { FaHandHoldingHeart , FaCogs  , FaRegGem} from 'react-icons/fa'
 
-
 const About = () => {
   const icons = [ { icon : < HiOutlineLightBulb id="1"/> , text : "Dream" , content : "We Dream of a clean world without diseases to live happily ever afte." },
                   { icon : < GiFeather id="2" /> , text : "Vision" , content : "Building the idea of ​​recycling in the minds of future generations because they are Our future. "  },
@@ -41,13 +40,13 @@ const About = () => {
 
         <div className="container d-flex align-items-center gap-5 flex-wrap flex-md-nowrap">
             <div className='about_info'>
-                <h2 className='text-danger' >about</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur quam eius esse sequi hic aperiam!
-                  Quibusdam ullam quaerat quam. Nam porro tempore aliquid, praesentium quisquam quae quod veniam laborum?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur quam eius esse sequi hic aperiam!
-                  Quibusdam ullam quaerat quam. Nam porro tempore aliquid, praesentium quisquam quae quod veniam laborum?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur quam eius esse sequi hic aperiam!
-                  Quibusdam ullam quaerat quam. Nam porro tempore aliquid, praesentium quisquam quae quod veniam laborum?
+                <h2> We Are The Best </h2>
+                <p> Our distinguished relationship with our competitors is what distinguishes us from others.
+                    Our passion and love for what we do is what keeps us moving forward.
+                    Our belief that we always deserve the best is what truly makes us the best.
+                    Together, we can protect the environment and achieve mutual benefits.
+                    If you want to sell used plastic, aluminum or paper, you are in the right place
+
                 </p>
             </div>
             
