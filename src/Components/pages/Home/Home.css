@@ -357,3 +357,65 @@ button.cus-befor:hover::before {
 #homeCard .card img {
     max-width: 30%;
 }
+/* --------------------------------------------------- About ----------------------------------------------- */
+#about img {
+    max-width: 30rem ;
+}
+#about .container_circle_icons {
+    background-color: #eee;
+    padding: .5rem;
+    
+}
+
+#about .circle_icons {
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    font-size: 5rem ;
+    position: relative;
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+#about .circle_icons p {
+    font-size: initial;
+    color: #00000096;
+    font-weight: bold;
+}
+#about .circle_icons div  {
+    font-size: 3.5rem;
+    color: darkcyan;
+}
+
+#about .circle_icons div:nth-child(2) {
+    position: absolute;
+    left: 3rem;
+    top: 8rem;
+}
+
+#about .circle_icons div:nth-child(3) {
+    position: absolute;
+    right: 3rem;
+    top: 8rem;
+}
+#about .circle_icons div:nth-child(4) {
+    margin: 7rem 0 9rem;    
+    font-size: 6rem;
+}
+
+#about .circle_icons div:nth-child(5) {
+    position: absolute;
+    left: 3rem;
+    bottom: 8rem;
+
+}
+
+#about .circle_icons div:nth-child(6) {
+    position: absolute;
+    right: 3rem;
+    bottom: 8rem;
+
+}
+
+/* #about .circle_icons div:nth-child(7) {
+    position: absolute;
+    bottom: 0;
+} */
