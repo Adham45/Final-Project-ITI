@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 .contact .info-box {
     color: #c2c2c2;
     padding: 20px;
@@ -152,5 +152,12 @@
     height: 100%;
     width: 100%;
     display: flex;
-    font-weight:bolder ;
+    font-weight:bolder;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #68ea30;
+    text-align: center;
+}
+.form-h1
+{
+  font-size: 50px;
 }

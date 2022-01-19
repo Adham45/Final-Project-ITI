@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Contact.css";
 import Footer from "../Footer/Footer";
 import Page_title from "../../page_title"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'boxicons';
-import { useState } from 'react';
 import { send } from 'emailjs-com';
+import Modal from 'react-modal'
+
+
 const Contact = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
   const [toSend, setToSend] = useState({
     name: '',
     email: '',
@@ -32,7 +35,7 @@ const Contact = () => {
         console.log('FAILED...', err);
       });
   };
-
+ 
   return (
     <>
     <Page_title title="CONTACT US" description="Home / contact" />
@@ -52,10 +55,10 @@ const Contact = () => {
                     <i className="bx bx-share-alt"></i>
                     <h3>Social Profiles</h3>
                     <div className="social-links">
-                      <a href="https://twitter.com/AdhamAtefDemo" className="twitter"><i class='bx bxl-twitter' ></i></a>
-                      <a href="https://www.facebook.com/adham.atef8585/" className="facebook"><i class='bx bxl-facebook-circle'></i></a>
-                      <a href="https://www.instagram.com/adham_atef_demo/" className="instagram"><i class='bx bxl-instagram' ></i></a>
-                      <a href="https://www.linkedin.com/in/adham-atef/" className="linkedin"><i class='bx bxl-linkedin-square' ></i></a>
+                      <a href="https://twitter.com/AdhamAtefDemo" className="twitter"><i className='bx bxl-twitter' ></i></a>
+                      <a href="https://www.facebook.com/adham.atef8585/" className="facebook"><i className='bx bxl-facebook-circle'></i></a>
+                      <a href="https://www.instagram.com/adham_atef_demo/" className="instagram"><i className='bx bxl-instagram' ></i></a>
+                      <a href="https://www.linkedin.com/in/adham-atef/" className="linkedin"><i className='bx bxl-linkedin-square' ></i></a>
                     </div>
                   </div>
                 </div>
@@ -76,7 +79,7 @@ const Contact = () => {
                 </div>
               </div><br></br><br></br>
               <div className='form-title'>
-                <h1><b>Send Us Message</b></h1>
+                <h1 className="form-h1"><b>Send Us Message</b></h1>
               </div>
         
               <form action="#" role="form" className="email-form mt-4" onSubmit={onSubmit}>
@@ -94,14 +97,31 @@ const Contact = () => {
                 <div className="form-group">
                   <textarea onChange={handleChange} value={toSend.smth} className="form-control" name="smth" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 </div>
-                <div className="text-center"><button type="submit">Send</button></div>
+                <button onClick={() => setModalIsOpen(true)} type='submit'>Submit</button>
+                <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        style={{
+          overlay: {
+            backgroundColor: 'grey'
+          },
+          content: {
+            color: 'orange'
+          }
+        }}
+      >
+        <h2>Thanks For Your Response !</h2>
+        <div>
+          <button onClick={() => setModalIsOpen(false)}>Close</button>
+        </div>
+      </Modal>
               </form>
             </div>
           </section><br></br>
           <div className='maps'>
           <iframe
             width="100%"
-            height="100%"
+            height="300px"
             title="map"
             className="absolute inset-0"
             frameBorder={0}

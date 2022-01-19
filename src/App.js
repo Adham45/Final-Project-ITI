@@ -13,8 +13,6 @@ import Home from './Components/pages/Home/Home';
 import Services from './Components/pages/Service/Service';
 import Testimonial from './Components/pages/Testimonial/Testimonial';
 import Navbar from './Components/NavBar';
-import Login from "./Components/forms/login";
-import Register from "./Components/forms/register";
 
 const App = () => {
   return (
