@@ -1,5 +1,5 @@
 import React from 'react';
-import Page_title from "../../page_title";
+import PageTitle from "../../page_title";
 import Footer from '../Footer/Footer';
 import { GiFeather ,  GiSpotedFlower} from 'react-icons/gi'
 import { HiOutlineLightBulb ,HiOutlineSun } from 'react-icons/hi'
@@ -36,7 +36,7 @@ const About = () => {
   return (
     <>
     <section id='about'>
-        <Page_title title="About Us" description="Who We Are ?" />
+        <PageTitle title="About Us" description="Who We Are ?" />
 
         <div className="container d-flex align-items-center gap-5 flex-wrap flex-md-nowrap">
             <div className='about_info'>

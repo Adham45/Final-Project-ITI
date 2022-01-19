@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./Contact.css";
 import Footer from "../Footer/Footer";
-import Page_title from "../../page_title"
+import PageTitle from "../../page_title"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'boxicons';
 import { send } from 'emailjs-com';
@@ -23,22 +23,22 @@ const Contact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     send(
-      'service_im3cydd',
-      'template_tzrgfr3',
-      toSend,
+     'service_im3cydd',
+     'template_tzrgfr3',
+     toSend,
       'user_Fdk2Jpf4uA0qLtPf9PvIH'
-    )
+   )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
+     })
+     .catch((err) => {
         console.log('FAILED...', err);
       });
   };
  
   return (
     <>
-    <Page_title title="CONTACT US" description="Home / contact" />
+    <PageTitle title="CONTACT US" description="Home / contact" />
     <section id="contact" className="contact">
             <div className="container">
               <div className="row mt-2">
@@ -82,39 +82,52 @@ const Contact = () => {
                 <h1 className="form-h1"><b>Send Us Message</b></h1>
               </div>
         
-              <form action="#" role="form" className="email-form mt-4" onSubmit={onSubmit}>
-                <div className="form-row">
+              <form action="#" className="email-form mt-4" onSubmit={onSubmit}>
+                <div className="row">
                   <div className="col-md-6 form-group">
                     <input onChange={handleChange} value={toSend.name} type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   </div>
                   <div className="col-md-6 form-group">
-                    <input onChange={handleChange} value={toSend.email} type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input onChange={handleChange} value={toSend.email} type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"/>
                   </div>
-                </div>
+                </div><br></br>
                 <div className="form-group">
                   <input onChange={handleChange} value={toSend.subject} type="text" className="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                </div>
+                </div><br></br>
                 <div className="form-group">
                   <textarea onChange={handleChange} value={toSend.smth} className="form-control" name="smth" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                </div>
-                <button onClick={() => setModalIsOpen(true)} type='submit'>Submit</button>
+                </div><br></br>
+                <div class="text-center"><button onClick={() => setModalIsOpen(true)} type="submit">Send</button></div>
                 <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
-        style={{
-          overlay: {
-            backgroundColor: 'grey'
-          },
-          content: {
-            color: 'orange'
-          }
-        }}
-      >
-        <h2>Thanks For Your Response !</h2>
-        <div>
-          <button onClick={() => setModalIsOpen(false)}>Close</button>
-        </div>
-      </Modal>
+                  isOpen={modalIsOpen}
+                  onRequestClose={() => setModalIsOpen(false)}
+                  style={{
+                    overlay:{
+                    backgroundColor:"transparent",
+                    alignItems:"center",
+                    justifyContent:"center",
+                    height:"100%",
+                    width:"100%",
+                    textAlign:"center",
+                    display: "flex"
+                   },
+                  content: {
+                  color: "#68ea30",
+                  textAlign:"center",
+                  display: "flex",
+                  alignItems:"center",
+                  justifyContent:"center",
+                  fontFamily:"Arial",
+                  fontWeight:"bolder",
+                   }
+                  }}>
+                    <div className='container'>
+                    <div className='row'>
+                    <h1 className='col align-self-center'>Thanks For Your Response !</h1>
+                    </div>
+                    <div className="text-center"><button onClick={() => setModalIsOpen(false)} id='btn-close-modal'>Close</button></div>
+                    </div>
+                  </Modal>
               </form>
             </div>
           </section><br></br>

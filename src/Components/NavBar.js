@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
     
-      <NavLink className="navbar-brand navbar-logo" to="/" exact>
+      <NavLink className="navbar-brand navbar-logo col-6" to="/" exact>
        Recycle Web Site
       </NavLink>
     
@@ -61,7 +61,7 @@ const Navbar = () => {
       </button>
  
       <div 
-        className="collapse navbar-collapse" id="navbarSupportedContent">
+        className="col-6 collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
             
             <div className="hori-selector">

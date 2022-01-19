@@ -1,5 +1,5 @@
 
-export default function Page_title (props){
+export default function PageTitle (props){
     return (
         <div className="page_title mb-5">
             <div className="page_title_info">

@@ -34,7 +34,7 @@ i {
 }
 #navbarSupportedContent li {
   list-style-type: none;
-  float: left;
+  float: right;
 }
 #navbarSupportedContent ul li a {
   color: rgba(255, 255, 255, 0.5);
@@ -83,7 +83,7 @@ i {
 }
 .hori-selector .right,
 .hori-selector .left {
-  position: absolute;
+  position: fixed;
   width: 25px;
   height: 25px;
   background-color: #fff;
