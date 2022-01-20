@@ -10,7 +10,7 @@ const Footer = ()=>
                 <div className="container d-flex flex-wrap align-items-center justify-content-between">
                     <div>
                         <h2 className='my-2'>
-                            <span className="text-green">Stay in touch </span> 
+                            <span className="text-green oleo">Stay in touch </span> 
                             & sign up for new sletter
                         </h2>
                     </div>
@@ -25,7 +25,7 @@ const Footer = ()=>
                     <div className='my-4'>
                         <div className='mb-4'>
                             <h2 className='mb-0'>
-                                Envi<span className='text-green'>ro</span> 
+                                Envi<span className='text-green oleo h1'>ro</span> 
                             </h2>
                             <small className='text-gray'>Nature & ECO Tempelate</small>
                         </div>
@@ -67,10 +67,10 @@ const Footer = ()=>
                         <div>
                             <div className="card border-0 mb-3" style={{maxWidth:"250px"}}>
                                 <div className="row g-0">
-                                    <div className="col-5">
-                                        <img src="http://placekitten.com/400/300" className="h-100 img-fluid rounded-start" alt="..." />
+                                    <div className="col-3">
+                                        <img src="http://placekitten.com/50/50" className="h-100 img-fluid rounded-start" alt="..." />
                                     </div>
-                                    <div className="col-7">
+                                    <div className="col-9">
                                     <div className="card-body py-0 pe-0">
                                         <h6 className="card-title text-gray">How can be successfull in market place</h6>
                                         <p className="card-text"><small className="text-muted">13 Feb, 2016</small></p>
@@ -80,10 +80,10 @@ const Footer = ()=>
                             </div>
                             <div className="card border-0 mb-3" style={{maxWidth:"250px"}}>
                                 <div className="row g-0">
-                                    <div className="col-5">
-                                        <img src="http://placekitten.com/400/300" className="h-100 img-fluid rounded-start" alt="..." />
+                                    <div className="col-3">
+                                        <img src="http://placekitten.com/50/50" className="h-100 img-fluid rounded-start" alt="..." />
                                     </div>
-                                    <div className="col-7">
+                                    <div className="col-9">
                                     <div className="card-body py-0 pe-0">
                                         <h6 className="card-title text-gray">How can be successfull in market place</h6>
                                         <p className="card-text"><small className="text-muted">13 Feb, 2016</small></p>
