@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: box-sizing;
 }
+
+.oleo {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
 .page_title {
     width: 100%;
     height: 12rem;
@@ -43,21 +48,21 @@
 }
 /* --------------------------------------------------------------------------------------------- */
 .carousel-item.zero-slide {
-    background-image: url("environment_one.jpg");
+    background-image: url("images/environment_one.jpg");
     background-size: cover;
 }
 .carousel-item.first-slide {
-    background-image: url("recycle.jpg");
+    background-image: url("images/recycle.jpg");
     background-size: cover;
 }
 
 .carousel-item.second-slide {
-    background-image: url("recycle2.jpg");
+    background-image: url("images/recycle2.jpg");
     background-size: cover;
 }
 
 .carousel-item.third-slide {
-    background-image: url("recycle3.jpg");
+    background-image: url("images/recycle3.jpg");
     background-size: cover;
 }
 
@@ -209,7 +214,7 @@ button.cus-befor:hover::before {
     position: relative;
     width : 100%;
     min-height: 20rem;
-    background-image: url("../Home/title.jpg");
+    background-image: url("../Home/images/title.jpg");
     background-size: cover;
     background-position: center ;
     z-index: 0;
@@ -263,7 +268,7 @@ button.cus-befor:hover::before {
 
 
 #reat_section {
-    background-image: url("../Home/green_4.jpg");
+    background-image: url("../Home/images/green_4.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 5px;
@@ -350,7 +355,7 @@ button.cus-befor:hover::before {
 }
 
 #homeCard .card {
-    background:linear-gradient(0deg, #6fd33de8, #6fd33de8), url("../Home/bg.jpeg");
+    background:linear-gradient(0deg, #6fd33de8, #6fd33de8), url("../Home/images/bg.jpeg");
     background-size:cover;
 }
 
