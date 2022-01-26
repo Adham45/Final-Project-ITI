@@ -6,22 +6,26 @@ import { HiOutlineLightBulb ,HiOutlineSun } from 'react-icons/hi'
 import { FaHandHoldingHeart , FaCogs  , FaRegGem} from 'react-icons/fa'
 
 const About = () => {
-  const icons = [ { icon : < HiOutlineLightBulb id="1"/> , text : "Dream" , content : "We Dream of a clean world without diseases to live happily ever afte." },
-                  { icon : < GiFeather id="2" /> , text : "Vision" , content : "Building the idea of ​​recycling in the minds of future generations because they are Our future. "  },
-                  { icon : < HiOutlineSun id="3" /> , text : "Passion" , content : "Passion is the driving force that drives us towards success and creativity." },
+  const icons = [ { icon : < HiOutlineLightBulb id="1"/> , text : "Dream" ,
+                    content : "We Dream of a clean world without diseases to live happily ever afte." },
+                  { icon : < GiFeather id="2" /> , text : "Vision" ,
+                    content : "Building the idea of ​​recycling in the minds of future generations because they are Our future. "  },
+                  { icon : < HiOutlineSun id="3" /> , text : "Passion" ,
+                    content : "Passion is the driving force that drives us towards success and creativity." },
                   { icon : < GiSpotedFlower id="4" /> , text : "Know More About Our ..."  },
-                  { icon : < FaHandHoldingHeart id="5" /> , text : "Benefit"  , content : "We believe that the relationship between an organization and its customers is the most important benefit to achieving progress" },
-                  { icon : < FaCogs id="6" /> , text : "Purpose" , content : "We strive for a better future through better use of resources and preservation of public health."  },
-                  { icon : < FaRegGem id="7" /> , text : "Values" , content : "Honesty, sincerity and earning customer satisfaction are the highest values ​​that make our hearts full of love for each other."  }
+                  { icon : < FaHandHoldingHeart id="5" /> , text : "Benefit"  ,
+                    content : "We believe that the relationship between an organization and its customers is the most important benefit to achieving progress" },
+                  { icon : < FaCogs id="6" /> , text : "Purpose" ,
+                    content : "We strive for a better future through better use of resources and preservation of public health."  },
+                  { icon : < FaRegGem id="7" /> , text : "Values" ,
+                    content : "Honesty, sincerity and earning customer satisfaction are the highest values ​​that make our hearts full of love for each other."  }
                 ]
-            
-                
+                          
   const show = (e) => {
       let items = document.querySelectorAll(".ico");
       let around_icons = document.querySelectorAll(".circle_icons span");
         if (e.target.id === "4"){
-          e.target.style.color = "red";
-          
+          e.target.style.color = "red";     
           items.forEach( el => {
             el.style.opacity = 1;
           });
@@ -29,7 +33,6 @@ const About = () => {
           around_icons.forEach( el => {
             el.style.color = "yellowgreen"
           })
-
         }
   }
 
@@ -38,7 +41,7 @@ const About = () => {
     <section id='about'>
         <PageTitle title="About Us" description="Who We Are ?" />
 
-        <div className="container d-flex align-items-center gap-5 flex-wrap flex-md-nowrap">
+        <div className="container d-flex align-items-center gap-5 flex-wrap flex-lg-nowrap">
             <div className='about_info'>
                 <h2> We Are The Best </h2>
                 <p> Our distinguished relationship with our competitors is what distinguishes us from others.
@@ -49,21 +52,31 @@ const About = () => {
 
                 </p>
             </div>
-            
-            <img className='img-fluid' src="https://image.freepik.com/free-vector/people-analyzing-growth-charts-illustrated_23-2148865274.jpg" alt="about" />
+            <img className='img-fluid m-auto' src="https://image.freepik.com/free-vector/people-analyzing-growth-charts-illustrated_23-2148865274.jpg" alt="about" />
         </div>
 
-      <div className='container_circle_icons'>
-        <div className=' circle_icons text-center'>
+      <div className='container_circle_icons '>
+        <div className=' circle_icons text-center mb-5'>
           {icons.map ( (opj , i) =>{
             return (
               <div key={i} >
-                  <span onClick= {(e) => show (e) }> {opj.icon} </span>
-                <p>{opj.text}</p>
-                <p className="ico d-none d-sm-block" > {opj.content} </p>
+                <span onClick= {(e) => show (e) }> {opj.icon} </span>
+                <h4>  {opj.text}</h4>
+                <p className="ico d-none d-lg-block " > {opj.content} </p>
               </div>
             )})}
-        </div>       
+        </div> 
+
+        <div className=" row justify-content-around p-0 m-0">
+           {icons.map ( (opj , i) =>{
+ 
+            return (
+              <div key={i} className=" ico_2 text-center col-sm-5 col-10 mt-5  d-block d-lg-none ">
+                <h3 className="mb-4" > {opj.text} </h3>
+                <p> {opj.content} </p>
+              </div>
+            )})} 
+          </div>     
       </div>
 
     </section>

@@ -3,10 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: box-sizing;
+    scroll-brhavior: 
 }
 
 .oleo {
     font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* scroll back ground */
+/* ::-webkit-scrollbar-track {
+    background: #888;
+    box-shadow: 0 0 20px #4CBB17 inset;
+} */
+
+/* scroll color  */
+::-webkit-scrollbar-thumb {
+background: #4CBB17;
+}  
+
+::-webkit-scrollbar-thumb:hover {
+background: #68ea30;
 }
 
 .page_title {
@@ -363,12 +383,18 @@ button.cus-befor:hover::before {
     max-width: 30%;
 }
 /* --------------------------------------------------- About ----------------------------------------------- */
+#about {
+    font-size: 19px;
+}
 
 #about .about_info h2 {
     margin-bottom: 1.5rem;
     text-transform: capitalize;
     color: #68ea30;
     font-weight: bold;
+}
+#about .about_info p {
+    line-height: 1.8;
 }
 #about img {
     width: 30rem  ;
@@ -380,16 +406,17 @@ button.cus-befor:hover::before {
 }
 
 #about .circle_icons {
-    font-size: 5rem ;
     position: relative;
     max-width: 600px;
     margin: 3rem auto;
+    font-size: 7rem ;
 }
 
 #about .circle_icons p {
     font-size: initial;
     color: #00000096;
     font-weight: bold;
+    line-height: 2;
 }
 #about .circle_icons div  {
     font-size: 3.5rem;
@@ -407,7 +434,7 @@ button.cus-befor:hover::before {
 }
 
 #about .circle_icons div:nth-child(1) .ico {
-    top: -4rem;
+    top: -5rem;
     left: 9.5rem;
     box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
     
@@ -439,9 +466,17 @@ button.cus-befor:hover::before {
 #about .circle_icons div:nth-child(4) {
     margin: 7rem 0 9rem;    
     font-size: 6rem;
+    animation-name: flower;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transition: .5s;
 }
+
 #about .circle_icons div:nth-child(4) span {
     cursor: pointer; 
+    position: relative ;
 }
 
 #about .circle_icons div:nth-child(5) {
@@ -469,18 +504,19 @@ button.cus-befor:hover::before {
     
 }
 #about .circle_icons div:nth-child(7) .ico  {
-    bottom: -9.5rem;
+    bottom: -10.5rem;
     left: 9.5rem;
     box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-    
 }
-
-#about .circle_icons div:nth-child(4) span svg {
-    /* color: red; */
+#about .ico_2 {
+    box-shadow: 10px 10px 15px #00000026 ;
+    padding: 10px;
+    border-radius : 8px;
+    border: 1px solid #77777729 ;
 }
 
 @keyframes flower {
-    0% {
-        font-size: 30;
+    100% {
+        color : red ;
     }
 }
