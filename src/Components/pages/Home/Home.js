@@ -16,6 +16,8 @@ import power from "../Home/images/power.png"
 import watering from '../Home/images/watering.png'
 import Team from './team/Team';
 import News from './news/News'
+import Card from './Card';
+
 const Home = () => {
     return (
         <>
@@ -94,54 +96,28 @@ const Home = () => {
                         <p className='size'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam</p>
                     </div>
                     <div className="row row-cols-1 row-cols-md-4 g-4">
-                        <div className="col">
-                            <div className="card border text-center pb-1">
-                                <div className='bg-white pt-4 pb-3 buttom-rounded'> 
-                                <img src= {electricity} className="card-img-top" alt="..." />
-                                <h4 className='my-3'>Recycling</h4>
-                                </div>
-                                <div className="card-body text-white small py-3 ">
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                    <a href='#' className='btn py-1 rounded-pill border-white fw-bold border-2'><small>READ MORE</small></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card border text-center pb-1">
-                                <div className='bg-white pt-4 pb-3 buttom-rounded'> 
-                                <img src={power} className="card-img-top" alt="..." />
-                                <h4 className='my-3'>Water Refine</h4>
-                                </div>
-                                <div className="card-body text-white small py-3 ">
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                    <a href='#' className='btn py-1 rounded-pill border-white fw-bold border-2'><small>READ MORE</small></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card border text-center pb-1">
-                                <div className='bg-white pt-4 pb-3 buttom-rounded'> 
-                                <img src={electricity} className="card-img-top" alt="..." />
-                                <h4 className='my-3'>Eco System</h4>
-                                </div>
-                                <div className="card-body text-white small py-3 ">
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                    <a href='#' className='btn py-1 rounded-pill border-white fw-bold border-2'><small>READ MORE</small></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card border text-center pb-1">
-                                <div className='bg-white pt-4 pb-3 buttom-rounded'> 
-                                <img src={power} className="card-img-top" alt="..." />
-                                <h4 className='my-3'>Soler System</h4>
-                                </div>
-                                <div className="card-body text-white small py-3 ">
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                    <a href='#' className='btn py-1 rounded-pill border-white fw-bold border-2'><small>READ MORE</small></a>
-                                </div>
-                            </div>
-                        </div>
+                    <Card title={"Recycling"}
+                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
+                          imgSrc={require("./images/power.png")}                            
+                                                
+                    />
+                    <Card title={"Water Refine"}
+                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
+                          imgSrc={require("./images/electricity.png")}                            
+                                                
+                    />
+                        
+                    <Card title={"Eco system"}
+                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
+                          imgSrc={require("./images/power.png")}                            
+                                                
+                    />
+                    
+                    <Card title={"solar system"}
+                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
+                          imgSrc={require("./images/electricity.png")}                            
+                                                
+                    />
                     </div>
                 </div>
             </section>
