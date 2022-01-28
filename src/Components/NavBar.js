@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-mainbg">
+    <nav className="navbar navbar-expand-lg navbar-mainbg navbar-fixed-top">
     
       <NavLink className="navbar-brand navbar-logo col-6" to="/" exact>
        Recycle Web Site
@@ -69,41 +69,47 @@ const Navbar = () => {
               <div className="right"></div>
             </div>
             
-            <li className="nav-item active">
+            <li className="nav-item" >
               <NavLink className="nav-link" to="/" exact>
-                <i 
+                <span className="span1"><i 
                 className="fas fa-tachometer-alt">
-                </i>Home
+                </i>Home</span>
+              
               </NavLink>
             </li>
 
             <li className="nav-item">
               <NavLink className="nav-link" to="/about" exact>
-                <i 
+                <span className="span1"> <i 
                 className="far fa-address-book">
-                </i>About
+                </i>About</span>
+               
               </NavLink> 
             </li>
 
             <li className="nav-item">
               <NavLink className="nav-link" to="/service" exact>
-                <i 
+                <span className="span1"><i 
                 className="far fa-clone">
-                </i>Services
+                </i>Services</span>
+                
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/testimonial" exact>
-                <i 
+                <span className="span1"><i 
                 className="far fa-chart-bar">
-                </i>Testimonial
+                </i>Testimonial</span>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact" exact>
-                <i 
+                <span className="span1"> <i 
                 className="far fa-copy">
-                </i>Contact Us
+                </i>
+                Contact Us
+                </span>
+
               </NavLink>
             </li>
         </ul>

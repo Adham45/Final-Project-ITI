@@ -1,22 +1,19 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import Footer from "../Footer/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Col, Container, Row} from 'react-bootstrap';
 import {MdOutlineRecycling ,MdOutlineBusAlert} from 'react-icons/md';
 import {RiExchangeDollarLine , RiPlantLine} from 'react-icons/ri';
+import {LinearProgress} from "@material-ui/core";
 import Icons from "../Home/icons";
 import Progress from "../Home/progress";
-import { LinearProgress } from "@material-ui/core";
-import "./Home.css";
 import lamp from "../Home/images/lamp.PNG";
 import plant from '../Home/images/plant.png'
 import recycling from '../Home/images/recycling.png'
-import electricity from "../Home/images/electricity.png"
-import power from "../Home/images/power.png"
 import watering from '../Home/images/watering.png'
 import Team from './team/Team';
 import News from './news/News'
 import Card from './Card';
+import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
@@ -32,26 +29,26 @@ const Home = () => {
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" className="cus-shape" aria-label="Slide 4"></button>
                         </div>
                         <div className="carousel-inner cus-full-height">
-                            <div className="carousel-item zero-slide active cus-full-height">
+                            <div className="carousel-item first-slide active cus-full-height">
                 
                             <div className="cus-overlay">
                                     <div className="container py-5 d-flex flex-column align-items-center justify-content-center text-center cus-full-height">
                                         <h1 className="my-4 h2 animate__animated animate__zoomIn">WELCOME TO THE WORLD</h1>
                                         <p className="mb-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
                                         </p>
+                                        <div className="my-4 cus-bottons animate__animated animate__fadeInUpBig">
+                                            <button type="button" className="btn btn-get-start btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
+                                            <button type="button" className="btn btn-outline-light btn-lg rounded-pill m-2 cus-befor">Contact Us</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item first-slide cus-full-height">
+                            <div className="carousel-item zero-slide cus-full-height">
                                 <div className="cus-overlay">
                                     <div className="container py-5 d-flex flex-column align-items-center justify-content-center text-center cus-full-height">
                                         <h1 className="my-4 h2 animate__animated animate__zoomIn">WELCOME TO THE WORLD</h1>
                                         <p className="mb-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
                                         </p>
-                                        <div className="my-4 cus-bottons animate__animated animate__fadeInUpBig">
-                                            <button type="button" className="btn btn-success btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
-                                            <button type="button" className="btn btn-outline-light btn-lg rounded-pill m-2 cus-befor">Contact Us</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +59,7 @@ const Home = () => {
                                         <p className="mb-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
                                         </p>
                                         <div className="cus-bottons my-4 animate__animated animate__fadeInUpBig">
-                                            <button type="button" className="btn btn-success btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
+                                            <button type="button" className="btn btn-get-start btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
                                             <button type="button" className="btn btn-outline-light btn-lg rounded-pill m-2 cus-befor">Contact Us</button>
                                         </div>
                                     </div>
@@ -75,7 +72,7 @@ const Home = () => {
                                         <p className="my-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
                                         </p>
                                         <div className="my-4 cus-bottons animate__animated animate__fadeInUpBig">
-                                            <button type="button" className="btn btn-success btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
+                                            <button type="button" className="btn btn-get-start btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
                                             <button type="button" className="btn btn-outline-light btn-lg rounded-pill m-2 cus-befor">Contact Us</button>
                                         </div>
                                     </div>
@@ -123,14 +120,14 @@ const Home = () => {
             </section>
                 
             {/* ______________________ Big Icons Section _____________________________________ */}
-            <secrtion>
+            <section>
                 <div className=" icons d-flex flex-wrap justify-content-evenly justify-content-center my-5 py-5">      
                     <Icons icon={<MdOutlineRecycling />} value={"recycling"}  />
                     <Icons icon={<RiPlantLine />} value={"Plant a tree"}  />
                     <Icons icon={<MdOutlineBusAlert />} value={"Connecting"}  />
                     <Icons icon={<RiExchangeDollarLine />} value={"Get Money"}  />    
                 </div>
-            </secrtion>
+            </section>
 
             {/* ________________________ Lamp Section ____________________________ */}
             <section className='py-5'>    
