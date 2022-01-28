@@ -4,7 +4,6 @@ export default function Icons (props) {
         <div className="m-4">
             {props.icon }
             <p> {props.value} </p>
-            
         </div>
     );
 }
