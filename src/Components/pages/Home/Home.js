@@ -148,8 +148,8 @@ const Home = () => {
                                 </div>
                                 <div>
                                     <Row>
-                                        <Col xs={2} >
-                                            <img src={plant} alt="Plant!" width="30" height="30"/>
+                                        <Col xs={3} sm={3} lg={2} >
+                                            <img src={plant} alt="Plant!" width="40" height="40"/>
 
                                         </Col>
                                         <Col>
@@ -160,7 +160,7 @@ const Home = () => {
                                 </div>
                                 <div>
                                     <Row>
-                                        <Col xs={2} >
+                                        <Col xs={3} sm={3} lg={2}>
                                             <img src={recycling} alt="Plant!" width="40" height="40"/>
 
                                         </Col>
@@ -171,7 +171,7 @@ const Home = () => {
                                 </div>
                                 <div>
                                     <Row>
-                                        <Col xs={2}>
+                                        <Col xs={3} sm={3} lg={2} >
                                             <img src={watering} alt="Plant!" width="40" height="40"/>
                                         </Col>
                                         <Col><h5 className='ubuntu'>Recycling Rubbish</h5>
