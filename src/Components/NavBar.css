@@ -154,3 +154,22 @@ i {
     left: -25px;
   }
 }
+
+/* ---------------------------------------------------- Theme --------------------------------------------- */
+
+#box_theme {
+  width: 40px;
+  height: 40px;
+  background-color: #af6969;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: #fff;
+  margin: auto;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  margin: 25px;
+  cursor: pointer ;
+}

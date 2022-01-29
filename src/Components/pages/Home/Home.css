@@ -250,7 +250,7 @@ button.cus-befor:hover::before {
     z-index: -1;
 }
 .icons div svg:hover {
-    color: #6fd33d;
+    color: #4CBB17;
 }
 .icons div svg {
     color: azure;
@@ -416,7 +416,7 @@ button.cus-befor:hover::before {
 }
 
 #about .container_circle_icons {
-    background-color: #eee;
+    /* background-color: #eee; */
     padding: 3rem 0 7rem ;  
 }
 
@@ -441,18 +441,25 @@ button.cus-befor:hover::before {
 #about .circle_icons div .ico  {
     position: absolute;
     color: rgba(0, 0, 0, 0.534);
-    padding: .5rem;
     border-radius: 8px;
     max-width: 280px;
     opacity: 0;
     transition: .9s;
+    background-color: #eee;
+    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
 }
 
+#about .circle_icons div:nth-child(1) .ico,
+#about .circle_icons div:nth-child(2) .ico,
+#about .circle_icons div:nth-child(3) .ico,
+#about .circle_icons div:nth-child(5) .ico,
+#about .circle_icons div:nth-child(6) .ico,
+#about .circle_icons div:nth-child(7) .ico{
+    padding: .5rem;
+}
 #about .circle_icons div:nth-child(1) .ico {
     top: -5rem;
     left: 9.5rem;
-    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-    
 }
 
 #about .circle_icons div:nth-child(2) {
@@ -463,8 +470,6 @@ button.cus-befor:hover::before {
 #about .circle_icons div:nth-child(2) .ico {
     bottom: 0rem;
     left: -21rem;
-    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-
 }
 
 #about .circle_icons div:nth-child(3) {
@@ -475,7 +480,6 @@ button.cus-befor:hover::before {
 #about .circle_icons div:nth-child(3) .ico {
     bottom: 0rem;
     right: -21rem;
-    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
 
 }
 #about .circle_icons div:nth-child(4) {
@@ -502,8 +506,6 @@ button.cus-befor:hover::before {
 #about .circle_icons div:nth-child(5) .ico {
     bottom: -1rem;
     left: -21rem;
-    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-    
 }
 
 #about .circle_icons div:nth-child(6) {
@@ -515,23 +517,27 @@ button.cus-befor:hover::before {
 #about .circle_icons div:nth-child(6) .ico  {
     right: -21rem;
     bottom: 0rem;
-    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
-    
 }
 #about .circle_icons div:nth-child(7) .ico  {
     bottom: -10.5rem;
     left: 9.5rem;
-    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 22%);
 }
 #about .ico_2 {
     box-shadow: 10px 10px 15px #00000026 ;
     padding: 10px;
     border-radius : 8px;
     border: 1px solid #77777729 ;
+    background-color : #eee;
+    color : #000;
 }
 
 @keyframes flower {
     100% {
         color : red ;
     }
+}
+
+#home_icons_data span {
+    color: #4CBB17;
+    font-weight: bold;
 }

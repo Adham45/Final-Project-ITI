@@ -1,7 +1,8 @@
-import React , {useEffect} from 'react'
+import React , {useEffect } from 'react';
 import './NavBar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+
 
 const Navbar = () => {
 

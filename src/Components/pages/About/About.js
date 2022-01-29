@@ -1,11 +1,14 @@
-import React from 'react';
+import React , { useContext } from 'react';
 import PageTitle from "../../page_title";
 import Footer from '../Footer/Footer';
 import { GiFeather ,  GiSpotedFlower} from 'react-icons/gi'
 import { HiOutlineLightBulb ,HiOutlineSun } from 'react-icons/hi'
 import { FaHandHoldingHeart , FaCogs  , FaRegGem} from 'react-icons/fa'
+import ThemesContext from '../../themes';
 
 const About = () => {
+  const theme = useContext(ThemesContext) 
+
   const icons = [ { icon : < HiOutlineLightBulb id="1"/> , text : "Dream" ,
                     content : "We Dream of a clean world without diseases to live happily ever afte." },
                   { icon : < GiFeather id="2" /> , text : "Vision" ,
@@ -38,7 +41,7 @@ const About = () => {
 
   return (
     <>
-    <section id='about'>
+    <section id='about' style={theme}>
         <PageTitle title="About Us" description="Who We Are ?" />
 
         <div className="container d-flex align-items-center gap-5 flex-wrap flex-lg-nowrap">
@@ -52,7 +55,7 @@ const About = () => {
 
                 </p>
             </div>
-            <img className='img-fluid m-auto' src="https://image.freepik.com/free-vector/people-analyzing-growth-charts-illustrated_23-2148865274.jpg" alt="about" />
+            <img className='img-fluid m-auto' src={require('./3.png')} alt="about" />
         </div>
 
       <div className='container_circle_icons '>
