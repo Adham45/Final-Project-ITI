@@ -2,23 +2,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: box-sizing;
-    scroll-brhavior: 
+    
+  
 }
 
 .oleo {
     font-family: 'Oleo Script Swash Caps', cursive;
 }
 
-::-webkit-scrollbar {
-    width: 20px;
-}
 
 /* scroll back ground */
-/* ::-webkit-scrollbar-track {
-    background: #888;
-    box-shadow: 0 0 20px #4CBB17 inset;
-} */
+ ::-webkit-scrollbar {
+    display: none;
+} 
 
 /* scroll color  */
 ::-webkit-scrollbar-thumb {
@@ -85,7 +81,10 @@ background: #68ea30;
     background-image: url("images/recycle3.jpg");
     background-size: cover;
 }
-
+.btn-get-start {
+    background-color:#4CBB17;
+    color: white;
+}
 .cus-overlay {
     background-color: #000000d4;
     width: 100%;

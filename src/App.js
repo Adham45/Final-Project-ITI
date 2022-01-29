@@ -13,12 +13,20 @@ import Home from './Components/pages/Home/Home';
 import Services from './Components/pages/Service/Service';
 import Testimonial from './Components/pages/Testimonial/Testimonial';
 import Navbar from './Components/NavBar';
+import { useState } from 'react';
+
+// import { Langcontext } from './context/lang';
+export const Langcontext=React.createContext()
 
 const App = () => {
+  const[langcont,Setlangcontext]=useState("ENGLISH")
+  console.log(langcont,"langcont app")
   return (
+    <div dir={langcont==="ENGLISH"?"ltr":"rtl"}>
    <Router>
+   <Langcontext.Provider value={{langcont,Setlangcontext}}>
+     <main>
     <Navbar/>
-    <main>
       <Switch>
         <Route path="/" exact>
           <Home/>
@@ -38,7 +46,10 @@ const App = () => {
         <Redirect to="/" />
       </Switch>
     </main>
+    </Langcontext.Provider>
+
    </Router>
+   </div>
   );
 }
 
