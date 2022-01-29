@@ -2,8 +2,31 @@ import React , {useEffect} from 'react'
 import './NavBar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+ import {Langcontext} from '../App'
+ import {useContext}from "react";
 
 const Navbar = () => {
+  const Arabic={
+    RecycleWebSite:" إعادة تدوير موقع",
+    Home:"الرئيسيه",
+    About:"معلومات عنا",
+    Services:"خدمات",
+    Testimonial:"شهادة",
+    CountactUs:"اتصل بنا"
+     }
+    const English={
+      RecycleWebSite:"Recycle Web Site",
+      Home:"Home",
+      About:"About",
+      Services:"Services",
+      Testimonial:"Testimonial",
+      CountactUs:"CountactUs"
+     
+      }
+      const{langcont,Setlangcontext} = useContext(Langcontext);
+      console.log(langcont,"langContext")
+      const translation=langcont==="ENGLISH"?English:Arabic;
+  
 
   function animation(){
     var tabsNewAnim = $('#navbarSupportedContent');
@@ -43,11 +66,14 @@ const Navbar = () => {
     
   }, []);
 
+  
+
+
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg navbar-fixed-top">
     
       <NavLink className="navbar-brand navbar-logo col-6" to="/" exact>
-       Recycle Web Site
+       {translation.RecycleWebSite}
       </NavLink>
     
     
@@ -73,7 +99,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/" exact>
                 <span className="span1"><i 
                 className="fas fa-tachometer-alt">
-                </i>Home</span>
+                </i>{translation.Home}</span>
               
               </NavLink>
             </li>
@@ -82,7 +108,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/about" exact>
                 <span className="span1"> <i 
                 className="far fa-address-book">
-                </i>About</span>
+                </i>{translation.About}</span>
                
               </NavLink> 
             </li>
@@ -91,7 +117,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/service" exact>
                 <span className="span1"><i 
                 className="far fa-clone">
-                </i>Services</span>
+                </i>{translation.Services}</span>
                 
               </NavLink>
             </li>
@@ -99,7 +125,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/testimonial" exact>
                 <span className="span1"><i 
                 className="far fa-chart-bar">
-                </i>Testimonial</span>
+                </i> {translation.Testimonial}</span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -107,10 +133,14 @@ const Navbar = () => {
                 <span className="span1"> <i 
                 className="far fa-copy">
                 </i>
-                Contact Us
+                {translation.CountactUs}
                 </span>
 
               </NavLink>
+              <button className="btn btn-danger" onClick={()=>{Setlangcontext(langcont==="ENGLISH"?"ARABIC":"ENGLISH")}} >
+        {langcont==="ENGLISH"?"ARABIC":"ENGLISH"}
+        </button>
+             
             </li>
         </ul>
       </div>
