@@ -84,7 +84,7 @@ const Services = () => {
                                     className="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingTwo">
                                     <div className="accordion-body">
-                                       {translation.firstaccordionbody}
+                                       {translation.Secaccordionbody}
                                     </div>
                                 </div>
                             </div>
