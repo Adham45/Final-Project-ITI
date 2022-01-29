@@ -8,7 +8,6 @@ function Cart(){
     const [price, setPrice] = useState({paper:0.70, metal:1.5, plastic:1.5})
 
     const [quantity, setQuantity] = useState({paper:15, metal:10, plastic:5})
-    console.log(quantity)
     
     
     const paperPrice   = price.paper*quantity.paper;
