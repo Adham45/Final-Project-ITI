@@ -11,7 +11,7 @@ const Navbar = () => {
     Home:"الرئيسيه",
     About:"معلومات عنا",
     Services:"خدمات",
-    Testimonial:"شهادة",
+    cart:"المبيعات",
     CountactUs:"اتصل بنا"
      }
     const English={
@@ -19,7 +19,7 @@ const Navbar = () => {
       Home:"Home",
       About:"About",
       Services:"Services",
-      Testimonial:"Testimonial",
+      cart:"My Cart",
       CountactUs:"CountactUs"
      
       }
@@ -122,10 +122,10 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/testimonial" exact>
+              <NavLink className="nav-link" to="/cart" exact>
                 <span className="span1"><i 
                 className="far fa-chart-bar">
-                </i> {translation.Testimonial}</span>
+                </i> {translation.cart}</span>
               </NavLink>
             </li>
             <li className="nav-item">

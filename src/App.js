@@ -14,6 +14,7 @@ import Services from './Components/pages/Service/Service';
 import Testimonial from './Components/pages/Testimonial/Testimonial';
 import Navbar from './Components/NavBar';
 import { useState } from 'react';
+import Cart from './Components/pages/cart/Cart';
 
 // import { Langcontext } from './context/lang';
 export const Langcontext=React.createContext()
@@ -42,6 +43,9 @@ const App = () => {
         </Route>
         <Route path="/contact" exact>
           <Contact/>
+        </Route>
+        <Route path="/cart" exact>
+          <Cart/>
         </Route>
         <Redirect to="/" />
       </Switch>
