@@ -6,9 +6,53 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'boxicons';
 import { send } from 'emailjs-com';
 import Modal from 'react-modal'
+import {Langcontext} from '../../../App'
+ import {useContext}from "react";
 
 
 const Contact = () => {
+  const Arabic={
+    CONTACTUS:" اتصل بنا",
+    Home_CONTACTUS:"الصفحه الرئيسيه /اتصل بينا",
+    OurAddress:"عنوان موقعنا",
+    Address:"شارع حسنين ابوالعال ,بني سويف, مصر",
+    SocialProfiles:" مواقع التواصل الاجتماعي",
+    EmailUs:"الايميل الالكتروني للشركه",
+    CallUs:"اتصل بينا",
+    Send_Us_Message:"تواصل معنا",
+    Name:"الاسم",
+    Email:"الاميل الالكتروني",
+    Subject:"الموضوع",
+    message:"الرساله",
+    send:"ارسال",
+
+    
+     }
+    const English={
+      CONTACTUS:"CONTACT US",
+      Home_CONTACTUS:"Home/CONTACT US",
+      OurAddress:"Our Address",
+      Address:"Hussien AbdEl'al Street, Beni-Suef, Egypt",
+      SocialProfiles:" Social Profiles",
+      EmailUs:"Email us",
+      CallUs:"Call Us",
+      Send_Us_Message:"Send Us Message",
+      Name:"Name",
+      Email:"Email",
+      Subject:"Subject",
+      message:"message",
+      send:"send",
+
+
+     
+      }
+
+
+
+  const{langcont,Setlangcontext} = useContext(Langcontext);
+  console.log(langcont,"langContext")
+  const translation=langcont==="ENGLISH"?English:Arabic;
+
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const [toSend, setToSend] = useState({
     name: '',
@@ -38,22 +82,22 @@ const Contact = () => {
  
   return (
     <>
-    <PageTitle title="CONTACT US" description="Home / contact" />
+    <PageTitle title={translation.CONTACTUS} description={translation.Home_CONTACTUS} />
     <section id="contact" className="contact">
             <div className="container">
               <div className="row mt-2">
                 <div className="col-md-6 d-flex align-items-stretch">
                   <div className="info-box">
                     <i className="bx bx-map"></i>
-                    <h3><b>Our Address</b></h3>
-                    <p>Hussien AbdEl'al Street, Beni-Suef, Egypt</p>
+                    <h3><b>{translation.OurAddress}</b></h3>
+                    <p>{translation.Address}</p>
                   </div>
                 </div>
         
                 <div className="col-md-6 mt-4 mt-md-0 d-flex justify-content-center">
                   <div className="info-box">
                     <i className="bx bx-share-alt"></i>
-                    <h3>Social Profiles</h3>
+                    <h3>{translation.SocialProfiles}</h3>
                     <div className="social-links">
                       <a href="https://twitter.com/AdhamAtefDemo" className="twitter"><i className='bx bxl-twitter' ></i></a>
                       <a href="https://www.facebook.com/adham.atef8585/" className="facebook"><i className='bx bxl-facebook-circle'></i></a>
@@ -66,38 +110,38 @@ const Contact = () => {
                 <div className="col-md-6 mt-4 d-flex align-items-stretch">
                   <div className="info-box">
                     <i className="bx bx-envelope"></i>
-                    <h3><b>Email Us</b></h3>
+                    <h3><b>{translation.EmailUs}</b></h3>
                     <p>adham.atef45@gmail.com</p>
                   </div>
                 </div>
                 <div className="col-md-6 mt-4 d-flex align-items-stretch">
                   <div className="info-box">
                     <i className="bx bx-phone-call"></i>
-                    <h3><b>Call Us</b></h3>
+                    <h3><b>{translation.CallUs}</b></h3>
                     <p>+20 109 881 5199</p>
                   </div>
                 </div>
               </div><br></br><br></br>
               <div className='form-title'>
-                <h1 className="form-h1"><b>Send Us Message</b></h1>
+                <h1 className="form-h1"><b>{translation.Send_Us_Message}</b></h1>
               </div>
         
               <form action="#" className="email-form mt-4" onSubmit={onSubmit}>
                 <div className="row">
                   <div className="col-md-6 form-group">
-                    <input onChange={handleChange} value={toSend.name} type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input onChange={handleChange} value={toSend.name} type="text" name="name" className="form-control" id="name" placeholder={translation.Name} data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   </div>
                   <div className="col-md-6 form-group">
-                    <input onChange={handleChange} value={toSend.email} type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"/>
+                    <input onChange={handleChange} value={toSend.email} type="email" className="form-control" name="email" id="email" placeholder={translation.Email} data-rule="email" data-msg="Please enter a valid email"/>
                   </div>
                 </div><br></br>
                 <div className="form-group">
-                  <input onChange={handleChange} value={toSend.subject} type="text" className="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input onChange={handleChange} value={toSend.subject} type="text" className="form-control" name="subject" id="subject" placeholder={translation.Subject} data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 </div><br></br>
                 <div className="form-group">
-                  <textarea onChange={handleChange} value={toSend.smth} className="form-control" name="smth" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea onChange={handleChange} value={toSend.smth} className="form-control" name="smth" rows="5" data-rule="required" data-msg="Please write something for us" placeholder={translation.message}></textarea>
                 </div><br></br>
-                <div class="text-center"><button onClick={() => setModalIsOpen(true)} type="submit">Send</button></div>
+                <div class="text-center"><button onClick={() => setModalIsOpen(true)} type="submit">{translation.send}</button></div>
                 <Modal
                   isOpen={modalIsOpen}
                   onRequestClose={() => setModalIsOpen(false)}
