@@ -132,6 +132,7 @@ const Services = () => {
                                 <div className="flip-card-back">
                                     <h1>{translation.FirstDivaccordion}</h1>
                                     <hr/>
+                                    <hr/>
 
                                     <p>{translation.firstaccordionbody}</p>
                                 </div>
