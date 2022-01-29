@@ -114,7 +114,6 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-
           <li className="nav-item">
             <NavLink className="nav-link" to="/service" exact>
               <span className="span1">
@@ -148,17 +147,16 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <button
-            type="button"
-            className="btn btn-outline-light  rounded-pill m-2 cus-befor"
-            onClick={() => {
-              Setlangcontext(langcont === "ENGLISH" ? "ARABIC" : "ENGLISH");
-            }}
-          >
-            {langcont === "ENGLISH" ? "ARABIC" : "ENGLISH"}
-          </button>
       </div>
-      
+      <button
+          type="button"
+          className="btn btn-outline-light  rounded-pill m-2 cus-befor"
+          onClick={() => {
+            Setlangcontext(langcont === "ENGLISH" ? "ARABIC" : "ENGLISH");
+          }}
+        >
+          {langcont === "ENGLISH" ? "ARABIC" : "ENGLISH"}
+        </button>
     </nav>
   );
 };
