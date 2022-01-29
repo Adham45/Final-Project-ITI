@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PageTitle from "../../page_title";
 import "./cart.css"
+
 import Footer from '../Footer/Footer';
 
 function Cart(){
@@ -8,6 +9,7 @@ function Cart(){
 
     const [quantity, setQuantity] = useState({paper:15, metal:10, plastic:5})
     console.log(quantity)
+    
     
     const paperPrice   = price.paper*quantity.paper;
     const plasticPrice = price.plastic*quantity.plastic;
