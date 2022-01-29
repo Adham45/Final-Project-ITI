@@ -104,7 +104,6 @@ const Navbar = () => {
               </span>
             </NavLink>
           </li>
-
           <li className="nav-item">
             <NavLink className="nav-link" to="/about" exact>
               <span className="span1">
@@ -114,6 +113,7 @@ const Navbar = () => {
               </span>
             </NavLink>
           </li>
+
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/service" exact>

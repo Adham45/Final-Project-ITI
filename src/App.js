@@ -15,8 +15,8 @@ import Testimonial from "./Components/pages/Testimonial/Testimonial";
 import Login from "./Components/pages/Registeration/login";
 import Register from "./Components/pages/Registeration/register";
 import Navbar from "./Components/NavBar";
-import ScrollButton from './Components/ScrollButton';
-  
+import ScrollButton from "./Components/ScrollButton";
+
 import { useState } from "react";
 
 // import { Langcontext } from './context/lang';
