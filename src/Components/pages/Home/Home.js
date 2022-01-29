@@ -19,6 +19,7 @@ import Popup from './Popup';
 import Footer from "../Footer/Footer";
 
 
+
 const Home = () => {
     return (
         <>
@@ -98,45 +99,60 @@ const Home = () => {
                     </div>
                     <div className="row row-cols-1 row-cols-md-4 g-4">
                     <Card title="Recycling"
-                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                          text="We concentrate on solving the problems of collection and recycling garbage."
                           imgSrc={power}
                           modelId="staticBackdrop"
 
                                                 
                     />
-                    <Popup content="hello1"
+                    <Popup content={`1-The large amount of garbage scattered everywhere:Collect and recycle garbage in a correct manner instead of wrong
+                                    manner that can cause environmental and health disasters.2- Diseases that spread reason of spread of garbage:Invest in the resources and helping solve the economic crisis by
+                                    making better use of resources and reuse it again.\n3- Limited economic resource and the economic crisis:Communication between the public and the recycling companies become
+                                    easier and organized.\n4- Low knowledge of the importance of recycling:Everyone can improve their income by selling plastic, aluminum, and
+                                    papers used by them, and providing job opportunities with a fixed income
+                                    for garbage collectors.\n5- Disposing of garbage the wrong way:make sorting garbage easier and thus decrease sorting costs for
+                                    businesses.\n6- The risk of global warming has increased in recent years:Preserving the environment and decrease global warming impact.`}
                            modelId="staticBackdrop"/>
 
-                    <Card title="Water Refine"
-                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                    <Card title="Our dream"
+                          text="We Dream of a clean world without diseases and health problems to live happily ever after."
                           imgSrc={electricity}
                           modelId="staticBackdrop2"                         
   
                                                 
                     />
-                    <Popup content="hello2"                            
+                    <Popup content={` we can achieve this through various methods:\n
+                                    1-Collecting the garbage continously and recycling it play an important role for a clean world\n
+                                    2-Reducing pollution of every kind:Pollution prevention reduces environmental costs (health problems and environmental damage)`}                            
                            modelId="staticBackdrop2"   />
 
                         
-                    <Card title="Eco system"
-                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                    <Card title="Our vision"
+                          text="Building the idea of ​​recycling in the minds of upcoming generations because they are our future."
                           imgSrc={power}
                           modelId="staticBackdrop3"
                           
                           />
-                    <Popup content="hello3"                            
+                    <Popup content={`No doubts that recycling has many advantages to our health and environment,so we seek to encourage all people to apply this concepts in their daily life.\n
+                                    We can achieve this through:
+                                    1-Talks that concentrtate on impportance and advantages of recycling.
+                                    2-Involving people in recycling process through collecting all recyclable materials like plastics from them with a fixed price.\n
+                                    3-Putting baskets for each recyclable materials in streets to increase the hygienic part of people besides involving them in recycling process.`}                            
                            modelId="staticBackdrop3"   />
                                                    
 
                     
-                    <Card title="solar system"
-                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                    <Card title="Customization"
+                          text="The relationship between organization and customers is the most important benefit for progress. "
                           imgSrc={electricity} 
                           modelId="staticBackdrop4"                          
  
                                                 
                     />
-                    <Popup content="hello4"                            
+                    <Popup content={`Our relationship with all people and users is based on Honesty, sincerity,Respect, and earning customer satisfaction which are the highest values ​​that make our hearts full of love for each other.\n
+                                    we can achieve customization through involving all customers and all people in recycling process regardless of their social status.\n
+                                    1-The rich can share by collecting all unused materials and send them to the our organization representitve as well as the normal level people,they can take a fixed price as each kilogram for these unused materials.\n
+                                    2-The working and struggling class with a low social level can involve in this process and benefit from,they can earn a higher price per kilogram of collection as an appreciation to their contribution ,their social status ,and their work nature.`}                            
                            modelId="staticBackdrop4" />
 
                     </div>
