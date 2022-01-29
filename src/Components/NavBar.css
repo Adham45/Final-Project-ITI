@@ -154,3 +154,26 @@ i {
     left: -25px;
   }
 }
+button.cus-befor {
+  position: relative;
+  overflow: hidden;
+  font-size: 15px;
+  transition: .5s;
+}
+button.cus-befor::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  opacity: .3;
+  width: 35px;
+  height: 91px;
+  transform: rotate(22deg);
+  top: -15px;
+  left: -50px;
+  transition: .5s;
+}
+
+button.cus-befor:hover::before {
+    left: 110%;
+}

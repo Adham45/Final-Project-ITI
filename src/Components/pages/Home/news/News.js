@@ -38,7 +38,6 @@ function News (){
         .then(res=>res.json())
         .then(result => {
             setNews(result.articles)
-            console.log(result.articles)
             setRef(true)
         })
     }
