@@ -5,7 +5,7 @@ function Popup(props) {
     
   return(
     <>
-    <div className="modal fade" id={modelId} data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div className="modal fade" id={modelId} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-scrollable">
             <div className="modal-content">
                 <div className="modal-header">
