@@ -1,6 +1,8 @@
+import Popup from "./Popup"
+import { useState } from "react"
 function Card(props) {
-    console.log("PROPS",props)
-    const {title, text, imgSrc} = props
+    const {title, text, imgSrc,modelId} = props
+    // const [buttonPopup,setButtonPopup]=useState(false);
     
     return (
         <div className="col">
@@ -11,10 +13,15 @@ function Card(props) {
                 </div>
                 <div className="card-body text-white small py-3 ">
                     <p className="card-text">{text}</p>
-                    <a href='#' className='btn py-1 rounded-pill border-white fw-bold border-2'><small>READ MORE</small></a>
+                    <button type="button" className="btn py-1 rounded-pill border-white fw-bold border-2 text-white " data-bs-toggle="modal" data-bs-target={`#${modelId}`}>Read More</button>
                 </div>
+            {/* <Popup content={content} /> */}
             </div>
+                
+
+            
         </div>
+
     )
 }
 

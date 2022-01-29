@@ -11,12 +11,13 @@ import "./Home.css";
 import lamp from "../Home/images/lamp.PNG";
 import plant from '../Home/images/plant.png'
 import recycling from '../Home/images/recycling.png'
-import electricity from "../Home/images/electricity.png"
-import power from "../Home/images/power.png"
+import electricity from "./images/electricity.png"
+import power from "./images/power.png"
 import watering from '../Home/images/watering.png'
 import Team from './team/Team';
 import News from './news/News'
 import Card from './Card';
+import Popup from './Popup';
 
 const Home = () => {
     return (
@@ -96,28 +97,48 @@ const Home = () => {
                         <p className='size'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam</p>
                     </div>
                     <div className="row row-cols-1 row-cols-md-4 g-4">
-                    <Card title={"Recycling"}
-                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
-                          imgSrc={require("./images/power.png")}                            
+                    <Card title="Recycling"
+                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                          imgSrc={power}
+                          modelId="staticBackdrop"
+
                                                 
                     />
-                    <Card title={"Water Refine"}
-                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
-                          imgSrc={require("./images/electricity.png")}                            
+                    <Popup content="hello1"
+                           modelId="staticBackdrop"/>
+
+                    <Card title="Water Refine"
+                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                          imgSrc={electricity}
+                          modelId="staticBackdrop2"                         
+  
                                                 
                     />
+                    <Popup content="hello2"                            
+                           modelId="staticBackdrop2"   />
+
                         
-                    <Card title={"Eco system"}
-                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
-                          imgSrc={require("./images/power.png")}                            
-                                                
-                    />
+                    <Card title="Eco system"
+                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                          imgSrc={power}
+                          modelId="staticBackdrop3"
+                          
+                          />
+                    <Popup content="hello3"                            
+                           modelId="staticBackdrop3"   />
+                                                   
+
                     
-                    <Card title={"solar system"}
-                          text={"This is a longer card with supporting text below as a natural lead-in to additional content."}
-                          imgSrc={require("./images/electricity.png")}                            
+                    <Card title="solar system"
+                          text="This is a longer card with supporting text below as a natural lead-in to additional content."
+                          imgSrc={electricity} 
+                          modelId="staticBackdrop4"                          
+ 
                                                 
                     />
+                    <Popup content="hello4"                            
+                           modelId="staticBackdrop4" />
+
                     </div>
                 </div>
             </section>
