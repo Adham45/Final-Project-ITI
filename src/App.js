@@ -16,6 +16,8 @@ import Navbar from './Components/NavBar';
 import ThemesContext , {themes} from  './Components/themes';
 import {BsFillMoonStarsFill , BsFillSunFill} from  'react-icons/bs';
 
+
+
 const App = () => {
   
   const [theme , setTheme] = useState(themes.light)
@@ -55,7 +57,7 @@ const App = () => {
    <Router>
      <main>
     <Navbar/>
-    <ThemesContext.Provider value={theme } >
+    <ThemesContext.Provider value={{theme}} >
             <div onClick={toggle_theme} id='box_theme'>
               { theme_icon }
             </div>
