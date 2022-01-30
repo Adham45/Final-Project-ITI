@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-import React , {useEffect } from 'react';
-import './NavBar.css';
-import { NavLink } from 'react-router-dom';
-import $ from 'jquery';
-=======
 import React, { useEffect } from "react";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
 import { Langcontext } from "../App";
 import { useContext } from "react";
->>>>>>> c83af712e6e444ee3f4b690d98a7b82aab415ba7
-
 
 const Navbar = () => {
   const Arabic = {

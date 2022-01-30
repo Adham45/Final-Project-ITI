@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-import React , { useContext } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Col, Container, Row} from 'react-bootstrap';
-import {MdOutlineRecycling ,MdOutlineBusAlert} from 'react-icons/md';
-import {RiExchangeDollarLine , RiPlantLine} from 'react-icons/ri';
-import {LinearProgress} from "@material-ui/core";
-=======
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { MdOutlineRecycling, MdOutlineBusAlert } from "react-icons/md";
 import { RiExchangeDollarLine, RiPlantLine } from "react-icons/ri";
 import { LinearProgress } from "@material-ui/core";
->>>>>>> c83af712e6e444ee3f4b690d98a7b82aab415ba7
 import Icons from "../Home/icons";
 import Progress from "../Home/progress";
 import lamp from "../Home/images/lamp.PNG";
@@ -26,82 +17,7 @@ import News from "./news/News";
 import Card from "./Card";
 import Popup from "./Popup";
 import Footer from "../Footer/Footer";
-import ThemesContext  from  '../../themes';
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 352aa7b36abc46bd85ececc9cefa25ed39715263
 const Home = () => {
-<<<<<<< HEAD
-
-    const theme  = useContext(ThemesContext) 
-
-    return (
-        <div  style={theme} >
-            {/* _______________________ Carouser Section ______________________________ */}
-            <section>
-                <div className="carousel">
-                    <div id="carouselExampleCaptions" className="carousel slide cus-carousel-height" data-bs-interval="false">
-                        <div className="carousel-indicators cus-postion">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="cus-shape active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className="cus-shape" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" className="cus-shape" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" className="cus-shape" aria-label="Slide 4"></button>
-                        </div>
-                        <div className="carousel-inner cus-full-height">
-                            <div className="carousel-item first-slide active cus-full-height">
-                
-                            <div className="cus-overlay">
-                                    <div className="container py-5 d-flex flex-column align-items-center justify-content-center text-center cus-full-height">
-                                        <h1 className="my-4 h2 animate__animated animate__zoomIn">WELCOME TO THE WORLD</h1>
-                                        <p className="mb-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
-                                        </p>
-                                        <div className="my-4 cus-bottons animate__animated animate__fadeInUpBig">
-                                            <button type="button" className="btn btn-get-start btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
-                                            <button type="button" className="btn btn-outline-light btn-lg rounded-pill m-2 cus-befor">Contact Us</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item zero-slide cus-full-height">
-                                <div className="cus-overlay">
-                                    <div className="container py-5 d-flex flex-column align-items-center justify-content-center text-center cus-full-height">
-                                        <h1 className="my-4 h2 animate__animated animate__zoomIn">WELCOME TO THE WORLD</h1>
-                                        <p className="mb-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item second-slide cus-full-height">
-                                <div className="cus-overlay">
-                                    <div className="container py-5 d-flex flex-column align-items-center justify-content-center text-center cus-full-height">
-                                        <h1 className="my-4 h2 animate__animated animate__zoomIn">What Do You Do Today For Peaples 2</h1>
-                                        <p className="mb-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
-                                        </p>
-                                        <div className="cus-bottons my-4 animate__animated animate__fadeInUpBig">
-                                            <button type="button" className="btn btn-get-start btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
-                                            <button type="button" className="btn btn-outline-light btn-lg rounded-pill m-2 cus-befor">Contact Us</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item third-slide cus-full-height">
-                                <div className="cus-overlay">
-                                    <div className="container py-5 d-flex flex-column align-items-center justify-content-center text-center cus-full-height">
-                                        <h1 className="my-4 h2 animate__animated animate__zoomIn">What Do You Do Today For Peaples 1</h1>
-                                        <p className="my-0 col-8-md col-lg-7 fs-5 d-none d-md-block animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores amet quasi sunt dignissimos totam!
-                                        </p>
-                                        <div className="my-4 cus-bottons animate__animated animate__fadeInUpBig">
-                                            <button type="button" className="btn btn-get-start btn-lg rounded-pill mx-2 cus-befor">Get Start Now</button>
-                                            <button type="button" className="btn btn-outline-light btn-lg rounded-pill m-2 cus-befor">Contact Us</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-=======
   return (
     <>
       {/* _______________________ Carouser Section ______________________________ */}
@@ -167,7 +83,6 @@ const Home = () => {
                       >
                         Contact Us
                       </button>
->>>>>>> c83af712e6e444ee3f4b690d98a7b82aab415ba7
                     </div>
                   </div>
                 </div>
@@ -209,120 +124,8 @@ const Home = () => {
                         Contact Us
                       </button>
                     </div>
-<<<<<<< HEAD
-                    <div className="row row-cols-1 row-cols-md-4 g-4">
-                    <Card title="Recycling"
-                          text="We concentrate on solving the problems of collection and recycling garbage."
-                          imgSrc={power}
-                          modelId="staticBackdrop"
-
-                                                
-                    />
-                    <Popup content={`1-The large amount of garbage scattered everywhere:Collect and recycle garbage in a correct manner instead of wrong
-                                    manner that can cause environmental and health disasters.2- Diseases that spread reason of spread of garbage:Invest in the resources and helping solve the economic crisis by
-                                    making better use of resources and reuse it again.\n3- Limited economic resource and the economic crisis:Communication between the public and the recycling companies become
-                                    easier and organized.\n4- Low knowledge of the importance of recycling:Everyone can improve their income by selling plastic, aluminum, and
-                                    papers used by them, and providing job opportunities with a fixed income
-                                    for garbage collectors.\n5- Disposing of garbage the wrong way:make sorting garbage easier and thus decrease sorting costs for
-                                    businesses.\n6- The risk of global warming has increased in recent years:Preserving the environment and decrease global warming impact.`}
-                           modelId="staticBackdrop"/>
-
-                    <Card title="Our dream"
-                          text="We Dream of a clean world without diseases and health problems to live happily ever after."
-                          imgSrc={electricity}
-                          modelId="staticBackdrop2"                         
-  
-                                                
-                    />
-                    <Popup content={` we can achieve this through various methods:\n
-                                    1-Collecting the garbage continously and recycling it play an important role for a clean world\n
-                                    2-Reducing pollution of every kind:Pollution prevention reduces environmental costs (health problems and environmental damage)`}                            
-                           modelId="staticBackdrop2"   />
-
-                        
-                    <Card title="Our vision"
-                          text="Building the idea of ​​recycling in the minds of upcoming generations because they are our future."
-                          imgSrc={power}
-                          modelId="staticBackdrop3"
-                          
-                          />
-                    <Popup content={`No doubts that recycling has many advantages to our health and environment,so we seek to encourage all people to apply this concepts in their daily life.\n
-                                    We can achieve this through:
-                                    1-Talks that concentrtate on impportance and advantages of recycling.
-                                    2-Involving people in recycling process through collecting all recyclable materials like plastics from them with a fixed price.\n
-                                    3-Putting baskets for each recyclable materials in streets to increase the hygienic part of people besides involving them in recycling process.`}                            
-                           modelId="staticBackdrop3"   />
-                                                   
-
-                    
-                    <Card title="Customization"
-                          text="The relationship between organization and customers is the most important benefit for progress. "
-                          imgSrc={electricity} 
-                          modelId="staticBackdrop4"                          
- 
-                                                
-                    />
-                    <Popup content={`Our relationship with all people and users is based on Honesty, sincerity,Respect, and earning customer satisfaction which are the highest values ​​that make our hearts full of love for each other.\n
-                                    we can achieve customization through involving all customers and all people in recycling process regardless of their social status.\n
-                                    1-The rich can share by collecting all unused materials and send them to the our organization representitve as well as the normal level people,they can take a fixed price as each kilogram for these unused materials.\n
-                                    2-The working and struggling class with a low social level can involve in this process and benefit from,they can earn a higher price per kilogram of collection as an appreciation to their contribution ,their social status ,and their work nature.`}                            
-                           modelId="staticBackdrop4" />
-=======
                   </div>
                 </div>
-<<<<<<< HEAD
-            </section>
-                
-            {/* ______________________ Big Icons Section _____________________________________ */}
-            
-            <section id='home_icons_data'>
-                <div className=" icons d-flex flex-wrap justify-content-evenly justify-content-center my-5 py-5">      
-                   
-                    <div className="btn" data-bs-toggle="collapse" data-bs-target="#card_data_1"  aria-controls="card_data_1">
-                        <Icons icon={<MdOutlineRecycling />} value={"recycling"}  />
-                        <div className="collapse multi-collapse" id="card_data_1" >
-                            <div className="card card-body "  style={{width:'250px'}}>
-                            <span> Recycling is </span> the best way to conserve limited resources by realizing benefits from the used resources and reusing them again,
-                            and this is our duty for a better future.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="btn" data-bs-toggle="collapse" data-bs-target="#card_data_2"  aria-controls="card_data_2">
-                        <Icons icon={<RiPlantLine />} value={"Plant a tree"}  />
-                        <div className="collapse multi-collapse" id="card_data_2" >
-                            <div className="card card-body "  style={{width:'250px'}}>
-                                <span> Volunteer With Us </span> and let us all live in a clean and healthy environment.
-                                You can volunteer with us wherever you are by planting a tree in your street, park, or residential area.
-                                Make our world clean Make our world green.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="btn" data-bs-toggle="collapse" data-bs-target="#card_data_3" aria-controls="card_data_3">
-                       <Icons icon={<MdOutlineBusAlert />} value={"connection"}  />
-                        <div className="collapse multi-collapse" id="card_data_3" >
-                            <div className="card card-body "  style={{width:'250px'}}>
-                            <span> Communication </span> is now easier than in the past by selecting your available quantity on the website, 
-                            and our employee will contact you within a few days, all with a just One click while you are at home.
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className="btn" data-bs-toggle="collapse" data-bs-target="#card_data_4"  aria-controls="card_data_1">
-                         <Icons icon={<RiExchangeDollarLine />} value={"Get Money"}  /> 
-                        <div className="collapse multi-collapse" id="card_data_4" >
-                            <div className="card card-body "  style={{width:'250px'}}>
-                            <span> Get money </span> by selling plastic, aluminum or used papers. The higher the quantity you have,
-                            the higher profits and benefits. Improving your financial situation is possible by selling what you do not need from these materials.
-                            </div>
-                        </div>
-                    </div> 
-                    
-                </div>           
-            </section>
-=======
               </div>
               <div className="carousel-item third-slide cus-full-height">
                 <div className="cus-overlay">
@@ -355,7 +158,6 @@ const Home = () => {
           </div>
         </div>
       </section>
->>>>>>> c83af712e6e444ee3f4b690d98a7b82aab415ba7
 
       {/* ______________________ 4 Cards (Working) Section _____________________________*/}
       <section id="homeCard">
@@ -394,7 +196,6 @@ const Home = () => {
               modelId="staticBackdrop3"
             />
             <Popup content="hello3" modelId="staticBackdrop3" />
->>>>>>> 352aa7b36abc46bd85ececc9cefa25ed39715263
 
             <Card
               title="solar system"
@@ -431,14 +232,6 @@ const Home = () => {
             </p>
           </div>
 
-<<<<<<< HEAD
-            {/* ______________________ Footer ________________________________________________ */}
-            <Footer />
-      </div>
-    )
-}
-export default Home;
-=======
           <div className="cont">
             <Row>
               <Col>
@@ -591,4 +384,3 @@ export default Home;
   );
 };
 export default Home;
->>>>>>> c83af712e6e444ee3f4b690d98a7b82aab415ba7

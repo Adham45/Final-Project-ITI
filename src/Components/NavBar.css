@@ -154,27 +154,6 @@ i {
     left: -25px;
   }
 }
-<<<<<<< HEAD
-
-/* ---------------------------------------------------- Theme --------------------------------------------- */
-
-#box_theme {
-  width: 40px;
-  height: 40px;
-  background-color: #af6969;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 30px;
-  color: #fff;
-  margin: auto;
-  position: fixed;
-  z-index: 10;
-  right: 0;
-  margin: 25px;
-  cursor: pointer ;
-}
-=======
 button.cus-befor {
   position: relative;
   overflow: hidden;
@@ -198,4 +177,3 @@ button.cus-befor::before {
 button.cus-befor:hover::before {
     left: 110%;
 }
->>>>>>> c83af712e6e444ee3f4b690d98a7b82aab415ba7
