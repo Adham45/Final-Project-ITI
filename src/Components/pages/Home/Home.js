@@ -1,10 +1,7 @@
-import React from "react";
+import React , {useContext} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
-import { MdOutlineRecycling, MdOutlineBusAlert } from "react-icons/md";
-import { RiExchangeDollarLine, RiPlantLine } from "react-icons/ri";
 import { LinearProgress } from "@material-ui/core";
-import Icons from "../Home/icons";
 import Progress from "../Home/progress";
 import lamp from "../Home/images/lamp.PNG";
 import plant from "../Home/images/plant.png";
@@ -18,9 +15,11 @@ import Card from "./Card";
 import Carousel from "./carousel/carousel";
 import Popup from "./Popup";
 import Footer from "../Footer/Footer";
+import Home_icon_data from '../../home_icon_data';
+
 const Home = () => {
   return (
-    <>
+    <section  >
       {/* _______________________ Carouser Section ______________________________ */}
       <Carousel />
       {/* ______________________ 4 Cards (Working) Section _____________________________*/}
@@ -73,14 +72,8 @@ const Home = () => {
       </section>
 
       {/* ______________________ Big Icons Section _____________________________________ */}
-      <section>
-        <div className=" icons d-flex flex-wrap justify-content-evenly justify-content-center my-5 py-5">
-          <Icons icon={<MdOutlineRecycling />} value={"recycling"} />
-          <Icons icon={<RiPlantLine />} value={"Plant a tree"} />
-          <Icons icon={<MdOutlineBusAlert />} value={"Connecting"} />
-          <Icons icon={<RiExchangeDollarLine />} value={"Get Money"} />
-        </div>
-      </section>
+      
+      <Home_icon_data />
 
       {/* ________________________ Lamp Section ____________________________ */}
       <section className="py-5">
@@ -244,7 +237,7 @@ const Home = () => {
 
       {/* ______________________ Footer ________________________________________________ */}
       <Footer />
-    </>
+    </section>
   );
 };
 export default Home;

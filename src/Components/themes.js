@@ -3,8 +3,8 @@ import React from "react";
 
 export const themes = {
     dark: {
-        color: 'white',
-        background: '#212123' ,
+        color: '#fff',
+        background: '#121418' ,
       
     } ,
     light : {
