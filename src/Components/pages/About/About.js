@@ -1,13 +1,12 @@
-import React from "react";
+import React , { useContext } from "react";
 import PageTitle from "../../page_title";
 import Footer from "../Footer/Footer";
 import { GiFeather, GiSpotedFlower } from "react-icons/gi";
 import { HiOutlineLightBulb, HiOutlineSun } from "react-icons/hi";
 import { FaHandHoldingHeart, FaCogs, FaRegGem } from "react-icons/fa";
 import { Langcontext } from "../../../App";
-import { useContext } from "react";
 
-const About = () => {
+const About = () => { 
   const Arabic = {
     aboutUs: " معلومات عنا",
     whoWeAre: "من نحن؟",
@@ -93,7 +92,6 @@ const About = () => {
       content: translation.valuesText,
     },
   ];
-
   const show = (e) => {
     let items = document.querySelectorAll(".ico");
     let around_icons = document.querySelectorAll(".circle_icons span");
@@ -124,7 +122,7 @@ const About = () => {
           </div>
           <img
             className="img-fluid m-auto"
-            src="https://image.freepik.com/free-vector/people-analyzing-growth-charts-illustrated_23-2148865274.jpg"
+            src={require('./3.png')}
             alt="about"
           />
         </div>

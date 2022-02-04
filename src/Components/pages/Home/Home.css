@@ -13,15 +13,6 @@
   display: none;
 }
 
-/* scroll color  */
-::-webkit-scrollbar-thumb {
-  background: #4cbb17;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #68ea30;
-}
-
 .page_title {
   width: 100%;
   height: 12rem;
@@ -111,8 +102,12 @@
   left: 0;
   z-index: -1;
 }
-.icons div svg:hover {
+.icons div svg:hover ,
+#home_icons_data span {
   color: #4cbb17;
+}
+#home_icons_data span {
+  font-weight: bold;
 }
 .icons div svg {
   color: azure;

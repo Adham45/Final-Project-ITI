@@ -1,5 +1,6 @@
 import Popup from "./Popup"
 import { useState } from "react"
+
 function Card(props) {
     const {title, text, imgSrc,modelId} = props
     // const [buttonPopup,setButtonPopup]=useState(false);
